@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message RequestProtoQuote {
+        string ID = 1;
+        string AccountID = 2;
+        string ProductNumber = 3;
+        string ProductCategory = 4;
+        string Quantity = 5;
+}
+
+message ProtoResponse {
+        string Message = 1;
+        string UnitPrice = 2;
+        string PriceValidationPeriod = 3;
+}

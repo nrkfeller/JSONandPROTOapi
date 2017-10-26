@@ -1,0 +1,28 @@
+{{template "header"}}
+<h1>Quote Request</h1>
+<form method="POST">
+    <label for="id">RFQ ID</label>
+    <input type="text" id="id" name="id">
+    <br>
+    <label for="accountid">Account ID</label>
+    <input type="text" id="accountid" name="accountid">
+    <br>
+    <label for="productnumber">Product Number</label>
+    <input type="text" id="productnumber" name="productnumber">
+    <br>
+    <label for="productcategory">Product Category</label>
+    <input type="text" id="productcategory" name="productcategory">
+    <br>
+    <label for="quantity">Quantity</label>
+    <input type="text" id="quantity" name="quantity">
+    <br>
+    <input type="submit">
+</form>
+
+<br>
+<h1>Reply</h1>
+<h4>Message: {{.Message}}</h4>
+<h4>Unit Price: {{.UnitPrice}}</h4>
+<h4>Price ValidationPeriod: {{.PriceValidationPeriod}}</h4>
+
+{{template "footer"}}
